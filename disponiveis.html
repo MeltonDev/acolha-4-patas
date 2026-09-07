@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pets Disponíveis | Acolha 4 Patas</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container header-container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="assets/icons/brand_logo_emblem.png" alt="Logo Acolha 4 Patas" />
+        </a>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="disponiveis.html">Pets Disponíveis</a></li>
+          <li><a href="acolhidos.html">Pets Acolhidos</a></li>
+          <li><a href="parceiros.html">Parceiros</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="missao.html">Nossa Missão</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container perdidos-section">
+    <h1><strong>Pets Disponíveis para Adoção</strong></h1>
+    <p><strong>Conheça os focinhos que estão esperando por uma família amorosa. Utilize o filtro para buscar seu novo melhor amigo!</strong></p>
+
+    <div class="filter-bar">
+      <label for="filtro-tipo">Filtrar por tipo de animal:</label>
+      <select id="filtro-tipo">
+        <option value="todos">Todos</option>
+        <option value="cachorro">Cachorro</option>
+        <option value="gato">Gato</option>
+        <option value="outro">Outro</option>
+      </select>
+    </div>
+
+    <div class="pet-grid">
+      <!-- Card 1 -->
+      <div class="pet-card" data-tipo="cachorro">
+        <img src="assets/images/Cachorrinho_doméstico_triste_01.jpg" alt="Cachorro" />
+        <h2>Thor (Exemplo)</h2>
+        <p><strong>Idade/Porte:</strong> Adulto, porte médio.</p>
+        <p><strong>Descrição:</strong> Muito dócil e brincalhão. Adora correr no quintal.</p>
+        <p><strong>Localização:</strong> Centro da Cidade, 111 - Sorocaba/SP</p>
+        <p><strong>Contato do Abrigo:</strong> (15) 99999-1234</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="pet-card" data-tipo="gato">
+        <img src="assets/images/Gatinho_doméstico_triste_02.jpg" alt="Gato" />
+        <h2>Luna (Exemplo)</h2>
+        <p><strong>Idade/Porte:</strong> Adulta.</p>
+        <p><strong>Descrição:</strong> Gatinha cinza, um pouco tímida no começo, mas muito carinhosa.</p>
+        <p><strong>Localização:</strong> Alto da Boa Vista, 321 - Sorocaba/SP</p>
+        <p><strong>Contato do Abrigo:</strong> contato@abrigo.com</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 - Acolha 4 Patas. Todos os direitos reservados.</p>
+      <p>Projeto acadêmico sem fins lucrativos.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
