@@ -388,31 +388,42 @@ footer p {
 @media (max-width: 768px) {
   .header-container {
     flex-direction: column;
-    gap: 15px;
-    text-align: center;
-    padding-top: 60px;
+    align-items: center;
+    padding: 15px 10px;
+    gap: 12px;
   }
 
   .logo {
     width: auto;
     height: auto;
+    position: static;
   }
 
   .logo a {
-    position: absolute;
-    top: -10px;
-    left: 50%;
-    transform: translateX(-50%);
+    position: static;
+    transform: none;
+    display: inline-block;
   }
 
   .logo img {
-    height: 90px;
+    height: 80px;
+    transform: none;
+  }
+
+  .logo img:hover {
+    transform: scale(1.04);
   }
 
   .nav-links {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 8px;
+    gap: 10px;
+    padding: 0;
+  }
+
+  .nav-links a {
+    padding: 6px 12px;
+    font-size: 0.9rem;
   }
 
   .banner {
